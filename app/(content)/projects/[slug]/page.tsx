@@ -20,7 +20,7 @@ export const generateMetadata = async ({ params }: { params: Params }) => {
     const { title, description } = project.metadata;
 
     return {
-        title: `${title} — Projects`,
+        title: `${title} Projects`,
         description,
         openGraph: {
             title,
@@ -87,7 +87,16 @@ const ProjectPage = async ({ params }: { params: Params }) => {
                                     target='_blank'
                                     rel='noreferrer nofollow noopener'
                                     className='inline-flex px-5 py-3 text-sm'>
-                                    SistemKasir App
+                                    Demo
+                                    <FaArrowRight className='-rotate-45 transition-transform duration-300 group-hover:rotate-0' />
+                                </Anchor>
+                                <Anchor
+                                    key='https://github.com/mansalmann/SistemKasirModern'
+                                    href='https://github.com/mansalmann/SistemKasirModern'
+                                    target='_blank'
+                                    rel='noreferrer nofollow noopener'
+                                    className='inline-flex px-5 py-3 text-sm'>
+                                    Repo
                                     <FaArrowRight className='-rotate-45 transition-transform duration-300 group-hover:rotate-0' />
                                 </Anchor>
                         </div>
@@ -102,7 +111,16 @@ const ProjectPage = async ({ params }: { params: Params }) => {
                                     target='_blank'
                                     rel='noreferrer nofollow noopener'
                                     className='inline-flex px-5 py-3 text-sm'>
-                                    Sewa Kos App
+                                    Demo
+                                    <FaArrowRight className='-rotate-45 transition-transform duration-300 group-hover:rotate-0' />
+                                </Anchor>
+                                <Anchor
+                                    key='https://github.com/mansalmann/Booking-Kos-Laravel'
+                                    href='https://github.com/mansalmann/Booking-Kos-Laravel'
+                                    target='_blank'
+                                    rel='noreferrer nofollow noopener'
+                                    className='inline-flex px-5 py-3 text-sm'>
+                                    Repo
                                     <FaArrowRight className='-rotate-45 transition-transform duration-300 group-hover:rotate-0' />
                                 </Anchor>
                         </div>
@@ -117,7 +135,7 @@ const ProjectPage = async ({ params }: { params: Params }) => {
                                     target='_blank'
                                     rel='noreferrer nofollow noopener'
                                     className='inline-flex px-5 py-3 text-sm'>
-                                    eLibrary App
+                                    Demo
                                     <FaArrowRight className='-rotate-45 transition-transform duration-300 group-hover:rotate-0' />
                                 </Anchor>
                         </div>
