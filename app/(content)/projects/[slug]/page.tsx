@@ -27,7 +27,7 @@ export const generateMetadata = async ({ params }: { params: Params }) => {
             description,
             type: 'article',
             url: `${siteConfig.url}/projects/${project.slug}`,
-            authors: 'Salman',
+            authors: 'Salman Alfarisi',
         },
         twitter: {
             title,
@@ -74,27 +74,69 @@ const ProjectPage = async ({ params }: { params: Params }) => {
                         <div className='sr-only'>Close</div>
                     </Anchor>
                 </header>
-                <h1 className='font-calistoga text-3xl leading-relaxed'>{project.metadata.title}</h1>
+
+                <h1 className='font-calistoga text-3xl flex justify-center leading-relaxed'>My Projects</h1>
                 <div className='grid grid-cols-2 gap-10 pb-8 max-md:grid-cols-1'>
                     <div>
-                        <p className='text-xl font-medium leading-relaxed'>{project.metadata.description}</p>
+                        <h1 className='font-calistoga text-3xl leading-relaxed'>Sistem Kasir (Web and Mobile App)</h1>
+                        <p className='text-xl font-medium leading-relaxed'>Point of Sales App with Laravel, Filament, and Flutter</p>
                         <div className='flex flex-wrap items-center gap-3 pt-4'>
-                            {JSON.parse(project.metadata.links).map((link: { url: string; name: string }) => (
                                 <Anchor
-                                    key={link.url}
-                                    href={link.url}
+                                    key='https://sistemkasir.mansalman.my.id'
+                                    href='https://sistemkasir.mansalman.my.id'
                                     target='_blank'
                                     rel='noreferrer nofollow noopener'
                                     className='inline-flex px-5 py-3 text-sm'>
-                                    {link.name}
+                                    SistemKasir App
                                     <FaArrowRight className='-rotate-45 transition-transform duration-300 group-hover:rotate-0' />
                                 </Anchor>
-                            ))}
                         </div>
                     </div>
-                    <article className='prose dark:prose-invert'>
-                        <CustomMDX source={project.content} />
-                    </article>
+                    <div>
+                        <h1 className='font-calistoga text-3xl leading-relaxed'>Web Sewa Kos-kosan</h1>
+                        <p className='text-xl font-medium leading-relaxed'>Find and Booking Popular Kos in several city</p>
+                        <div className='flex flex-wrap items-center gap-3 pt-4'>
+                                <Anchor
+                                    key='https://sewakos.mansalman.my.id'
+                                    href='https://sewakos.mansalman.my.id'
+                                    target='_blank'
+                                    rel='noreferrer nofollow noopener'
+                                    className='inline-flex px-5 py-3 text-sm'>
+                                    Sewa Kos App
+                                    <FaArrowRight className='-rotate-45 transition-transform duration-300 group-hover:rotate-0' />
+                                </Anchor>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className='font-calistoga text-3xl leading-relaxed'>eLibrary App</h1>
+                        <p className='text-xl font-medium leading-relaxed'>Explore and borrow your favourite books!</p>
+                        <div className='flex flex-wrap items-center gap-3 pt-4'>
+                                <Anchor
+                                    key='https://libraryapp.mansalman.my.id'
+                                    href='https://libraryapp.mansalman.my.id'
+                                    target='_blank'
+                                    rel='noreferrer nofollow noopener'
+                                    className='inline-flex px-5 py-3 text-sm'>
+                                    eLibrary App
+                                    <FaArrowRight className='-rotate-45 transition-transform duration-300 group-hover:rotate-0' />
+                                </Anchor>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className='font-calistoga text-3xl leading-relaxed'>Music App</h1>
+                        <p className='text-xl font-medium leading-relaxed'>Play your songs online!</p>
+                        <div className='flex flex-wrap items-center gap-3 pt-4'>
+                                <Anchor
+                                    key='https://musicapp.mansalman.my.id'
+                                    href='https://musicapp.mansalman.my.id'
+                                    target='_blank'
+                                    rel='noreferrer nofollow noopener'
+                                    className='inline-flex px-5 py-3 text-sm'>
+                                    Music App Player
+                                    <FaArrowRight className='-rotate-45 transition-transform duration-300 group-hover:rotate-0' />
+                                </Anchor>
+                        </div>
+                    </div>
                 </div>
             </Container>
         </>

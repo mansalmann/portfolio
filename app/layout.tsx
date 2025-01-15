@@ -26,18 +26,18 @@ export const metadata: Metadata = {
         description: siteConfig.description,
         card: 'summary_large_image',
     },
-    robots: {
-        index: true,
-        follow: true,
-        googleBot: {
-            index: true,
-            follow: true,
-            noimageindex: true,
-            'max-video-preview': -1,
-            'max-image-preview': 'large',
-            'max-snippet': -1,
-        },
-    },
+    // robots: {
+    //     index: true,
+    //     follow: true,
+    //     googleBot: {
+    //         index: true,
+    //         follow: true,
+    //         noimageindex: true,
+    //         'max-video-preview': -1,
+    //         'max-image-preview': 'large',
+    //         'max-snippet': -1,
+    //     },
+    // },
     alternates: {
         canonical: siteConfig.url,
     },

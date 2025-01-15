@@ -1,4 +1,4 @@
-import projectImage from '@/public/projects/sistem-kasir.png';
+import projectImage from '@/public/projects/coding.jpg';
 import Card from '../ui/card';
 import Image from 'next/image';
 import { toKebabCase } from '@/utils/lib';
@@ -6,7 +6,7 @@ import Anchor from '../ui/anchor';
 import { FaArrowRight } from 'react-icons/fa6';
 
 export default function Project() {
-    const projectName = 'Sistem Kasir';
+    const projectName = 'Portfolio';
 
     return (
         <Card className='group relative bg-red-100'>
@@ -22,7 +22,7 @@ export default function Project() {
             <div className='absolute bottom-3 left-3'>
                 <Anchor
                     className='cancel-drag size-10 justify-end transition-all ease-in-out group-hover:w-full'
-                    href={`https://mansalman.my.id`}
+                    href={`/projects/${toKebabCase(projectName)}`}
                     aria-label={projectName}>
                     <span className='hidden whitespace-nowrap opacity-0 transition-all duration-300 ease-in group-hover:translate-x-0 group-hover:opacity-100 md:inline'>
                         {projectName}
