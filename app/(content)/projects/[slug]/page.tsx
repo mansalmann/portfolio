@@ -126,16 +126,25 @@ const ProjectPage = async ({ params }: { params: Params }) => {
                         </div>
                     </div>
                     <div>
-                        <h1 className='font-calistoga text-3xl leading-relaxed'>eLibrary App</h1>
-                        <p className='text-xl font-medium leading-relaxed'>Explore and borrow your favourite books!</p>
+                        <h1 className='font-calistoga text-3xl leading-relaxed'>OnlineClothing (eCommerce)</h1>
+                        <p className='text-xl font-medium leading-relaxed'>Find and buy your favourite clothes!</p>
                         <div className='flex flex-wrap items-center gap-3 pt-4'>
                                 <Anchor
-                                    key='https://libraryapp.mansalman.my.id'
-                                    href='https://libraryapp.mansalman.my.id'
+                                    key='https://ecommerce.mansalman.my.id'
+                                    href='https://ecommerce.mansalman.my.id'
                                     target='_blank'
                                     rel='noreferrer nofollow noopener'
                                     className='inline-flex px-5 py-3 text-sm'>
                                     Demo
+                                    <FaArrowRight className='-rotate-45 transition-transform duration-300 group-hover:rotate-0' />
+                                </Anchor>
+                                <Anchor
+                                    key='https://github.com/mansalmann/eCommerce'
+                                    href='https://github.com/mansalmann/eCommerce'
+                                    target='_blank'
+                                    rel='noreferrer nofollow noopener'
+                                    className='inline-flex px-5 py-3 text-sm'>
+                                    Repo
                                     <FaArrowRight className='-rotate-45 transition-transform duration-300 group-hover:rotate-0' />
                                 </Anchor>
                         </div>
