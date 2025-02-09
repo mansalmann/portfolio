@@ -162,6 +162,15 @@ const ProjectPage = async ({ params }: { params: Params }) => {
                                     Music App Player
                                     <FaArrowRight className='-rotate-45 transition-transform duration-300 group-hover:rotate-0' />
                                 </Anchor>
+                                <Anchor
+                                    key='https://github.com/mansalmann/MusicAppLaravel'
+                                    href='https://github.com/mansalmann/MusicAppLaravel'
+                                    target='_blank'
+                                    rel='noreferrer nofollow noopener'
+                                    className='inline-flex px-5 py-3 text-sm'>
+                                    Repo
+                                    <FaArrowRight className='-rotate-45 transition-transform duration-300 group-hover:rotate-0' />
+                                </Anchor>
                         </div>
                     </div>
                 </div>
