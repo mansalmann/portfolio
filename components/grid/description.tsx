@@ -18,7 +18,7 @@ export default function Description() {
             <p className='leading-relaxed'>
                 Hi, I&apos;m <span className='font-calistoga text-xl'>Salman</span>, a Web Developer from
                 Yogyakarta, Indonesia.{' '}
-                <span className='hidden md:inline'>I love building web application especially using JavaScript, PHP, Laravel, MySQL, and love learning new things.</span>
+                <span className='hidden md:inline'>I love building web application especially using JavaScript, React, PHP, Laravel, MySQL, and love learning new things.</span>
             </p>
         </Card>
     );
